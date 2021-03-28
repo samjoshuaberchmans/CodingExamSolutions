@@ -11,9 +11,11 @@ public class SparseArrays {
     	int lengthOfQueries = queries.length;
     	int[] indexes = new int[lengthOfQueries];
 
-    	for (int j = 0 ; j < queries.length ; j++){
-    		indexes[j] = 0;
-    	}
+//    	The following Decleration is not neeeded. Tested with heavy data and it can be removed.
+    	
+//    	for (int j = 0 ; j < queries.length ; j++){
+//    		indexes[j] = 0;
+//    	}
     	
     	
     	for (int i = 0 ; i < queries.length ; i++){

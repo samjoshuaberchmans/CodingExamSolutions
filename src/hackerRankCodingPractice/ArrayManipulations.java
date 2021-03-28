@@ -1,7 +1,5 @@
 package hackerRankCodingPractice;
 
-import java.util.Arrays;
-
 public class ArrayManipulations {
 
     static long arrayManipulation(int n, int[][] queries) {
