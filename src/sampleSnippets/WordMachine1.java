@@ -1,4 +1,4 @@
-package projectCCPA;
+package sampleSnippets;
 
 import java.util.Arrays;
 import java.util.HashMap;

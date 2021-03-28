@@ -1,4 +1,4 @@
-package projectCCPA;
+package sampleSnippets;
 
 //non-recursive java program for inorder traversal
 /* Class containing left and right child of

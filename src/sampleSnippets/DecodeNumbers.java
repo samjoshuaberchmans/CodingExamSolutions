@@ -1,4 +1,4 @@
-package projectCCPA;
+package sampleSnippets;
 
 import java.util.*;
 import java.util.ArrayList;

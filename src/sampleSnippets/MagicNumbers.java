@@ -1,4 +1,4 @@
-package projectCCPA;
+package sampleSnippets;
 
 class MagicNumbers 
 { 

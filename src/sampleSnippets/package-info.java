@@ -5,4 +5,4 @@
  * @author sberchma
  *
  */
-package projectCCPA;
+package sampleSnippets;

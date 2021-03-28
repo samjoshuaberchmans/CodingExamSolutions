@@ -1,4 +1,4 @@
-package projectCCPA;
+package sampleSnippets;
 
 public class DeleteCosts {
 	
@@ -24,10 +24,12 @@ public class DeleteCosts {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	    // Given string s 
-	    String s = "abc";
+	    // Given string s
+//		s = "abaac", cost = [1,2,3,4,5]
+//		s = "aabaa", cost = [1,2,3,4,1]
+	    String s = "aabaa";
 	    // Given cost of removal 
-	    int []cost = { 1, 2, 3}; 
+	    int []cost = {1,2,3,4,1}; 
 	    // Function call 
 	    System.out.print(Maxcost(s, cost));
 	}

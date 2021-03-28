@@ -1,4 +1,4 @@
-package projectCCPA;
+package sampleSnippets;
 
 public class ReplaceDoubleString {
 	  public static void main(String args[]) {

@@ -1,4 +1,4 @@
-package projectCCPA;
+package sampleSnippets;
 
 /// input string: "bloombergisfun"
 	// input dictionary: {bloomberg, is, fun}
