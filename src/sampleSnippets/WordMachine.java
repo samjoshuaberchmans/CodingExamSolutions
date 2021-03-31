@@ -41,7 +41,7 @@ public class WordMachine {
 	
 	public static int hasElements(int i){
 		if(stacks.size() < i ){
-			throw new IllegalArgumentException("Not having many elements");
+			throw new IllegalArgumentException("-1");
 		}
 		return i;
 	}
@@ -56,7 +56,11 @@ public class WordMachine {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String input = "12 DUP 4 POP 5 DUP + DUP + -";
+//		String input = "12 DUP 4 POP 5 DUP + DUP + -";
+		
+//		String input = "3 DUP 5 - -";
+		
+		String input = "5 6 + -";
 		
 		String[] arrays = input.split(" ");
 		
