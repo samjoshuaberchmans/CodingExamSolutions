@@ -29,8 +29,7 @@ public class MinimumSwapToMakePalindrome {
 		for(char c: s1) {
 			if(hs.contains(c)) {
 				hs.remove(c);				
-			}				
-			else {
+			}else{
 				hs.add(c);
 			}				
 		}
@@ -62,12 +61,10 @@ public class MinimumSwapToMakePalindrome {
 				}
 				i++;
 				j--;
-			}
-			else {
+			}else {
 				swap(s1,i,i+1);
 				result++;
 			}
-			
 		}
 		return result;
 	}
@@ -78,6 +75,8 @@ public class MinimumSwapToMakePalindrome {
 		System.out.println("Minimum Number of Swapping Neeeded - asflkj - " + minswaps("asflkj".toCharArray()));
 		System.out.println("Minimum Number of Swapping Neeeded - aabb - " + minswaps("aabb".toCharArray()));
 		System.out.println("Minimum Number of Swapping Neeeded - ntiin - " + minswaps("ntiin".toCharArray()));
+		System.out.println("Minimum Number of Swapping Neeeded - joshua - " + minswaps("joshua".toCharArray()));
+		System.out.println("Minimum Number of Swapping Neeeded - masmas - " + minswaps("masmas".toCharArray()));
 		
 	}
 
