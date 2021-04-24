@@ -1,9 +1,6 @@
 package hackerRankCodingPractice;
 
-
 import java.util.*;
-
-
 
 public class NewYearChaos {
 	    // Complete the minimumBribes function below.
