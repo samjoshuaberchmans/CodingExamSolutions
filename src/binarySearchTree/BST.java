@@ -21,4 +21,17 @@ class BST {
 		}
 		return node;
 	}
+	
+	public void printBSTInorder(Node node){
+		if (node == null){
+			return;
+		}
+		
+		printBSTInorder(node.left);
+		System.out.println(node.data+ " ");
+		printBSTInorder(node.right);
+	}
+	
+	public void printBST(Node node){
+	}
 }

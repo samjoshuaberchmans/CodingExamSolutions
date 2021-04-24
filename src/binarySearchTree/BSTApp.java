@@ -17,7 +17,7 @@ public class BSTApp {
 		b = a.insert(b, 14);
 		b = a.insert(b, 13);
 		
-		System.out.println("final out - " + b.right);
+		a.printBSTInorder(b);
 	}
 
 }
