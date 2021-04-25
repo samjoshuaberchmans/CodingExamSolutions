@@ -11,12 +11,13 @@ public class ValidateBST {
 		node.right = a.createNewNode(5);
 		node.left.left = a.createNewNode(1);
 		node.left.right = a.createNewNode(4);
+
+		a.printBST(node);
 		
-		if (a.isBST(node,null,null)){
-			System.out.println("IS BST");
-		}else{
-			System.out.println("Not a BST");
-		}
+//		if (a.isBST(node,null,null)){
+//			System.out.println("IS BST");
+//		}else{
+//			System.out.println("Not a BST");
 	}
 
 }
