@@ -78,4 +78,20 @@ public class DoubleListNodeOperations {
         }
     }
 
+    public DoubleNode deleteNode(DoubleNode head , DoubleNode toDelete){
+        if(head != null && toDelete != null){
+            if(head == toDelete){
+                head = toDelete.next;
+                toDelete.next.previous = null;
+            } else if(toDelete.next != null && toDelete.previous != null){
+                toDelete.previous.next = toDelete.next;
+                toDelete.next.previous = toDelete.previous;
+            } else if ( toDelete.next == null && toDelete.previous != null){
+                toDelete.previous.next = null;
+            }
+
+        }
+        return head;
+    }
+
 }
