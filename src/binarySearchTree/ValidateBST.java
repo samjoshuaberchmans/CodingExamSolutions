@@ -12,10 +12,10 @@ public class ValidateBST {
 		node.left.left = a.createNewNode(1);
 		node.left.right = a.createNewNode(4);
 		
-		if (a.isBST(node)){
+		if (a.isBST(node,null,null)){
 			System.out.println("IS BST");
 		}else{
-			System.out.println("Not a BAST");
+			System.out.println("Not a BST");
 		}
 	}
 
