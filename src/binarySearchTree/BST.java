@@ -34,4 +34,17 @@ class BST {
 	
 	public void printBST(Node node){
 	}
+	
+	public boolean isBST(Node node , Node left , Node right){
+		if(node == null)
+			return true;
+		
+		if(left != null && node.data <= left.data)
+			return false;
+		
+		if(right != null && node.data >= right.data)
+			return false;
+		
+		return isBST(node.left, left , node) && isBST(node.right, node , right);
+	}
 }
