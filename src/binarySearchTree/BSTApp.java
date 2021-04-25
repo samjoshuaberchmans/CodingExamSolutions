@@ -16,7 +16,12 @@ public class BSTApp {
 		b = a.insert(b, 1);
 		b = a.insert(b, 14);
 		b = a.insert(b, 13);
-		
+
+		if (a.isBST(b,null,null)){
+			System.out.println("IS BST");
+		}else{
+			System.out.println("Not a BST");
+		}
 		a.printBSTInorder(b);
 	}
 
