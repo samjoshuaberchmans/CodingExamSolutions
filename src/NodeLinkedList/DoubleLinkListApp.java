@@ -17,5 +17,11 @@ public class DoubleLinkListApp {
 //        operation.printDoubleLinkedList(operationHead);
         operationHead =operation.addAfter(operationHead,operationHead.next.next,17);
         operation.printDoubleLinkedList(operationHead);
+        operationHead = operation.deleteNode(operationHead,operationHead.next.next);
+        operation.printDoubleLinkedList(operationHead);
+        operationHead = operation.deleteNode(operationHead,operationHead);
+        operation.printDoubleLinkedList(operationHead);
+        operationHead = operation.deleteNode(operationHead,operationHead.next.next.next);
+        operation.printDoubleLinkedList(operationHead);
     }
 }
