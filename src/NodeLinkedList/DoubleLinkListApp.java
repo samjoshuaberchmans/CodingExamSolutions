@@ -9,7 +9,8 @@ public class DoubleLinkListApp {
         operationHead = operation.push(operationHead,8);
 //        operation.printDoubleLinkedList(operationHead);
         operationHead = operation.addAtLast(operationHead,10);
-//        operation.printDoubleLinkedList(operationHead);
+        operationHead = operation.addAtLast(operationHead,2);
+        operation.printDoubleLinkedList(operationHead);
 //        operation.printDoubleLinkedList(operationHead.next);
         operationHead =operation.addAfter(operationHead,operationHead.next,13);
 //        operation.printDoubleLinkedList(operationHead);
@@ -18,9 +19,9 @@ public class DoubleLinkListApp {
         operationHead =operation.addAfter(operationHead,operationHead.next.next,17);
         operation.printDoubleLinkedList(operationHead);
         operationHead = operation.deleteNode(operationHead,operationHead.next.next);
-        operation.printDoubleLinkedList(operationHead);
+//        operation.printDoubleLinkedList(operationHead);
         operationHead = operation.deleteNode(operationHead,operationHead);
-        operation.printDoubleLinkedList(operationHead);
+//        operation.printDoubleLinkedList(operationHead);
         operationHead = operation.deleteNode(operationHead,operationHead.next.next.next);
         operation.printDoubleLinkedList(operationHead);
     }

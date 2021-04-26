@@ -9,7 +9,16 @@ public class SingleLinkLinkApp {
         singleNode = operations.addDataToNode(singleNode,16);
         singleNode = operations.addDataToNode(singleNode,22);
         singleNode = operations.addDataToNode(singleNode,14);
-        operations.printSinglNode(singleNode);
+        operations.printSingleNode(singleNode);
         operations.printNthNodeFromLast(singleNode,3);
+        operations.deleteNodeWithAddress(singleNode,singleNode.next);
+        operations.printSingleNode(singleNode);
+        operations.deleteNodeWithAddress(singleNode,singleNode);
+        operations.printSingleNode(singleNode);
+        operations.deleteNodeWithAddress(singleNode,singleNode.next);
+        operations.printSingleNode(singleNode);
+        operations.deleteNodeWithAddress(singleNode,singleNode.next);
+        operations.printSingleNode(singleNode);
+
     }
 }

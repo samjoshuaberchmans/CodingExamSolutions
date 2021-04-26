@@ -45,12 +45,27 @@ public class SingleNodeOperations {
         System.out.println("Value - " + tempNode.data);
     }
 
-    public void printSinglNode(SingleNode head){
+    public SingleNode deleteNodeWithAddress(SingleNode inNode , SingleNode deleteNode){
+        SingleNode temp = deleteNode.next;
+        if(deleteNode.next != null) {
+            deleteNode.data = temp.data;
+            deleteNode.next = temp.next;
+        }else{
+            temp = inNode;
+            while(temp.next.next != null){
+                temp = temp.next;
+            }
+            temp.next = null;
+        }
+        return inNode;
+    }
+
+    public void printSingleNode(SingleNode head){
         SingleNode inNode = head;
+        System.out.println(" ");
         while (inNode != null){
-            System.out.println(inNode.data);
+            System.out.print(inNode.data+" ");
             inNode = inNode.next;
         }
     }
-
 }

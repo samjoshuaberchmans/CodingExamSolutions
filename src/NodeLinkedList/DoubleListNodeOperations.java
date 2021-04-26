@@ -14,6 +14,14 @@ public class DoubleListNodeOperations {
             newNode.next = head;
             newNode.previous = null;
 
+//            if (head == null){
+//                head = newNode;
+//            } else {
+//                newNode.previous = null;
+//                newNode.next = head;
+//                head.previous = newNode;
+//            }
+
 //          This step will make sure if Head is having 5 or 6 nodes inside already , will make sure this is first and then add then point the next previous to current node.
             if(head != null){
                 head.previous = newNode;
@@ -51,11 +59,10 @@ public class DoubleListNodeOperations {
             newNode.previous = null;
             head = newNode;
         }
-
+        printDoubleLinkedList(head);
         while (last.next != null){
             last = last.next;
         }
-
         last.next = newNode;
         newNode.previous = last;
         return head;
@@ -66,16 +73,18 @@ public class DoubleListNodeOperations {
         DoubleNode inNode = head;
         System.out.println("Forward");
         while(inNode != null){
-            System.out.println(inNode.data + " ");
+            System.out.print(inNode.data + " ");
             last = inNode;
             inNode = inNode.next;
         }
+        System.out.println(" ");
 
         System.out.println("Reverse");
         while(last != null){
-            System.out.println(last.data+" ");
+            System.out.print(last.data+" ");
             last = last.previous;
         }
+        System.out.println(" ");
     }
 
     public DoubleNode deleteNode(DoubleNode head , DoubleNode toDelete){
@@ -89,7 +98,6 @@ public class DoubleListNodeOperations {
             } else if ( toDelete.next == null && toDelete.previous != null){
                 toDelete.previous.next = null;
             }
-
         }
         return head;
     }
