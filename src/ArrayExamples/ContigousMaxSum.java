@@ -17,15 +17,30 @@ public class ContigousMaxSum {
         return maxSum;
     }
 
+    public static int maxSubArrays(int[] numbers){
+        int sum=Integer.MIN_VALUE;
+        int maxSum=Integer.MIN_VALUE;
+
+        for(int i = 0 ; i < numbers.length ; i++){
+            if(sum < 0){
+                sum=numbers[i];
+            }else{
+                sum+=numbers[i];
+            }
+            maxSum = Math.max(sum,maxSum);
+        }
+        return maxSum;
+    }
+
     public static void main(String[] args){
 
         int[] in1 = {1,3,-10,20}; // Expected 20
         int[] in2 = {1,3,-10,2}; //Expected 4
         int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
 
-        System.out.println("int 1 - " + maxSubArray(in1));
-        System.out.println("int 2 - " + maxSubArray(in2));
-        System.out.println("int 2 - " + maxSubArray(nums));
+        System.out.println("int 1 - " + maxSubArray(in1) + " - Second method - " + maxSubArrays(in1));
+        System.out.println("int 2 - " + maxSubArray(in2) + " - second method - " + maxSubArrays(in2));
+        System.out.println("int 2 - " + maxSubArray(nums) + " - second Method - " + maxSubArrays(nums));
 //        List<Integer> inList1 = Arrays.asList(in1);
 //        List<Integer> inList2 = Arrays.asList(in2);
 
