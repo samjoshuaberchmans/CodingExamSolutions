@@ -35,7 +35,6 @@ public class FirstDuplicateValueInArray {
         return -1;
     }
 
-
     public static int brutForceMethod(int[] array){
         int minimalIndex=array.length;
         for(int i= 0 ; i < array.length ; i++){
