@@ -3,7 +3,7 @@ package ArrayExamples;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class MinimumSwapTpMakeEqualStrings {
+public class MinimumSwapToMakeEqualStrings {
 
     public static String returnSortedString(String input){
         char[] chars = input.toCharArray();
