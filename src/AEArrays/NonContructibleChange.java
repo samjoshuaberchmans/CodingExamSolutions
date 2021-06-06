@@ -1,6 +1,5 @@
 package AEArrays;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class NonContructibleChange {
@@ -8,12 +7,11 @@ public class NonContructibleChange {
     public static int nCC(int[] coins){
         Arrays.sort(coins);
         int change = 0;
-        int minimumSum=Integer.MAX_VALUE;
-        for (int i = 0 ; i < coins.length ; i++){
-            if( coins[i] <= (change+1)) {
-                change += coins[i];
-            }else{
-                return change+1;
+        for (int coin : coins) {
+            if (coin <= (change + 1)) {
+                change += coin;
+            } else {
+                return change + 1;
             }
         }
         return change+1;
