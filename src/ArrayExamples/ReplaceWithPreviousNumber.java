@@ -38,6 +38,7 @@ public class ReplaceWithPreviousNumber {
         String[] input2 = new String[0];
         String[] input3 = {null,"1",null};
         String[] input4 = {"1",null,"2",null,null,"3",null};
+        String[] input5 = {"1",null,"4",null,null,null,null,"3",null,null};
 
         String[] result1 = addNumberForNull(input1);
         printArray(result1);
@@ -47,6 +48,7 @@ public class ReplaceWithPreviousNumber {
         printArray(result3);
         String[] result4 = addNumberForNull(input4);
         printArray(result4);
-
+        String[] result5 = addNumberForNull(input5);
+        printArray(result5);
     }
 }
